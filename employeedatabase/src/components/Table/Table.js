@@ -8,7 +8,10 @@ const Table = () => {
    // console.log(employees);
 
 const handleTableHeaderClick = (event) => {
-    console.log(event.target);
+    //console.log(event.target);
+    const target = event.target;
+    const id = target.getAttribute('data-id');
+    console.log(id);
 }
 
 const eventContext = {

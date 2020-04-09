@@ -12,6 +12,7 @@ console.log(context);
 
     return (
             <th
+            data-id={text}
             onClick={context.onTableHeaderClick}
             >{text}</th>
     )
