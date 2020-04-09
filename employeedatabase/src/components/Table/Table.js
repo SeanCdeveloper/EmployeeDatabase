@@ -2,7 +2,7 @@ import React from 'react';
 import employees from '../../employees.json'
 
 const Table = () => {
-    console.log(employees);
+   // console.log(employees);
     return (
       <table border="2px">
           <thead>
@@ -15,13 +15,18 @@ const Table = () => {
               </tr>
           </thead>
           <tbody>
-              <tr>
-                  <td>I</td>
-                  <td>N</td>
-                  <td>88</td>
-                  <td>a@a</td>
-                  <td>DOB</td>
-              </tr>
+                  {
+                      employees.map((employee) => (
+                          //console.log(employee)
+                        <tr key={employee.id}>
+                            <td>{employee.image}</td>
+                            <td>{employee.name}</td>
+                            <td>{employee.phone}</td>
+                            <td>{employee.email}</td>
+                            <td>{employee.dob}</td>
+                        </tr>
+                      ))
+                  }
           </tbody>
       </table>
     )
