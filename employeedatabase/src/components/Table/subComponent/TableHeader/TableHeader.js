@@ -1,20 +1,30 @@
 import React from 'react';
-import {EventContext} from '../../tableContexts.js';
+import {EventContext, TableContext} from '../../tableContexts.js';
 
 const TableHeader = (props) => {
+const tableContext = React.useContext(TableContext);
+const eventContext = React.useContext(EventContext);
 
-const context = React.useContext(EventContext);
-console.log(context);
+//console.log(context);
 
     const {
         text
     } = props;
 
+    const {
+        sortBy
+    } = tableContext
+
+
+
     return (
             <th
             data-id={text}
-            onClick={context.onTableHeaderClick}
-            >{text}</th>
+            onClick={eventContext.onTableHeaderClick}
+            >
+            {text}
+           { sortBy === text && 'sort'} 
+            </th>
     )
 }
 
