@@ -2,10 +2,21 @@ import React from 'react';
 import employees from '../../employees.json'
 import TableRow from './subComponent/TableRow/TableRow.js'
 import TableHeader from './subComponent/TableHeader/TableHeader.js'
+import {EventContext} from './tableContexts.js';
 
 const Table = () => {
    // console.log(employees);
+
+const handleTableHeaderClick = (event) => {
+    console.log(event.target);
+}
+
+const eventContext = {
+    onTableHeaderClick: handleTableHeaderClick
+}
+
     return (
+        <EventContext.Provider value={eventContext}>
       <table border="2px">
           <thead>
               <tr>
@@ -43,6 +54,7 @@ const Table = () => {
                   }
           </tbody>
       </table>
+      </EventContext.Provider>
     )
 }
 
