@@ -1,7 +1,6 @@
 import React from 'react'
 
 const TableRow = (props) => {
-console.log(props);
 const {
 employee: {
     image, name, phone, email, dob

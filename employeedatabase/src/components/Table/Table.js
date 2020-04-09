@@ -1,6 +1,7 @@
 import React from 'react';
 import employees from '../../employees.json'
 import TableRow from './subComponent/TableRow/TableRow.js'
+import TableHeader from './subComponent/TableHeader/TableHeader.js'
 
 const Table = () => {
    // console.log(employees);
@@ -8,11 +9,26 @@ const Table = () => {
       <table border="2px">
           <thead>
               <tr>
-                  <th>Image</th>
+                  <TableHeader 
+                  text="Image" 
+                  />
+                  <TableHeader 
+                  text="Name" 
+                  />
+                  <TableHeader 
+                  text="Phone" 
+                  />
+                  <TableHeader 
+                  text="Email" 
+                  />
+                  <TableHeader 
+                  text="DOB" 
+                  />
+                  {/* <th>Image</th>
                   <th>Name</th>
                   <th>Phone</th>
                   <th>Email</th>
-                  <th>DOB</th>
+                  <th>DOB</th> */}
               </tr>
           </thead>
           <tbody>
