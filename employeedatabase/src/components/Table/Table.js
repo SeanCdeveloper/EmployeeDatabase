@@ -1,7 +1,8 @@
 import React from 'react';
-//import 
+import employees from '../../employees.json'
 
 const Table = () => {
+    console.log(employees);
     return (
       <table border="2px">
           <thead>
