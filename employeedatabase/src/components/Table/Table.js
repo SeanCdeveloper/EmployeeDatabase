@@ -23,6 +23,28 @@ const Table = () => {
         onTableHeaderClick: handleTableHeaderClick
     }
 
+    let sortedData = employees;
+
+    switch (sortBy) {
+        case "Image":
+            sortedData = employees.sort((a,b) => a.image.localeCompare(b.image));
+            break;
+        case "Name":
+            sortedData = employees.sort((a,b) => a.name.localeCompare(b.name));
+            break;
+        case "Phone":
+            sortedData = employees.sort((a,b) => a.phone.localeCompare(b.phone));
+            break;
+        case "Email":
+            sortedData = employees.sort((a,b) => a.email.localeCompare(b.email));
+            break;
+        case "DOB":
+            sortedData = employees.sort((a,b) => a.dob.localeCompare(b.dob));
+            break;
+            default: 
+            break;
+    }
+
     return (
         <TableContext.Provider value={tableContext}>
             <EventContext.Provider value={eventContext}>

@@ -5,8 +5,6 @@ const TableHeader = (props) => {
 const tableContext = React.useContext(TableContext);
 const eventContext = React.useContext(EventContext);
 
-//console.log(context);
-
     const {
         text
     } = props;
@@ -14,8 +12,6 @@ const eventContext = React.useContext(EventContext);
     const {
         sortBy
     } = tableContext
-
-
 
     return (
             <th
@@ -29,4 +25,5 @@ const eventContext = React.useContext(EventContext);
 }
 
 export default TableHeader;
+
 
