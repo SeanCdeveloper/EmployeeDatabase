@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import employees from '../../employees.json'
 import TableRow from './subComponent/TableRow/TableRow.js'
 import TableHeader from './subComponent/TableHeader/TableHeader.js'
@@ -8,15 +8,33 @@ import { TableContext } from './tableContexts.js';
 const Table = () => {
 
     const [sortBy, setSortBy] = useState();
+    const [sortOrder, setSortOrder] = useState();
 
-    const tableContext = {
-        sortBy,
-    }
 
     const handleTableHeaderClick = (event) => {
         const target = event.target;
         const id = target.getAttribute('data-id');
-        setSortBy(id);
+        // if (id === sortBy) {
+        //     switch (sortOrder) {
+        //         case 'ASC':
+        //             setSortOrder('DESC')
+        //             break;
+        //         case 'DESC':
+        //             setSortOrder(undefined)
+        //             setSortBy(undefined)
+        //             break;
+        //         default:
+        //             break;
+        //     }
+        // } else {
+            setSortBy(id);
+        //     setSortOrder('ASC')
+        // }
+    }
+
+    const tableContext = {
+        sortBy,
+        sortOrder,
     }
 
     const eventContext = {
@@ -27,21 +45,21 @@ const Table = () => {
 
     switch (sortBy) {
         case "Image":
-            sortedData = employees.sort((a,b) => a.image.localeCompare(b.image));
+            sortedData = employees.sort((a, b) => a.image.localeCompare(b.image));
             break;
         case "Name":
-            sortedData = employees.sort((a,b) => a.name.localeCompare(b.name));
+            sortedData = employees.sort((a, b) => a.name.localeCompare(b.name));
             break;
         case "Phone":
-            sortedData = employees.sort((a,b) => a.phone.localeCompare(b.phone));
+            sortedData = employees.sort((a, b) => a.phone.localeCompare(b.phone));
             break;
         case "Email":
-            sortedData = employees.sort((a,b) => a.email.localeCompare(b.email));
+            sortedData = employees.sort((a, b) => a.email.localeCompare(b.email));
             break;
         case "DOB":
-            sortedData = employees.sort((a,b) => a.dob.localeCompare(b.dob));
+            sortedData = employees.sort((a, b) => a.dob.localeCompare(b.dob));
             break;
-            default: 
+        default:
             break;
     }
 

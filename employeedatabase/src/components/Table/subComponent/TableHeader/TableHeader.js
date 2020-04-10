@@ -10,7 +10,8 @@ const eventContext = React.useContext(EventContext);
     } = props;
 
     const {
-        sortBy
+        sortBy,
+        sortOrder
     } = tableContext
 
     return (
@@ -19,7 +20,7 @@ const eventContext = React.useContext(EventContext);
             onClick={eventContext.onTableHeaderClick}
             >
             {text}
-           { sortBy === text && 'sort'} 
+           { sortBy === text && sortOrder} 
             </th>
     )
 }
