@@ -16,6 +16,7 @@ const eventContext = React.useContext(EventContext);
 
     return (
             <th
+            //scope='col'
             data-id={text}
             onClick={eventContext.onTableHeaderClick}
             >

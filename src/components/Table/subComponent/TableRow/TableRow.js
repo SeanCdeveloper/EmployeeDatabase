@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 
 const TableRow = (props) => {
 const {
@@ -9,8 +10,7 @@ employee: {
 
     return (
         <tr>
-            
-            <td>{image}</td>
+            <td><img className="img-fluid" src={image} alt={name}/></td>
             <td>{name}</td>
             <td>{phone}</td>
             <td>{email}</td>

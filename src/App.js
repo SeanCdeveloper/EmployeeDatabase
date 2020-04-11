@@ -18,7 +18,6 @@ const App = () => {
 
   const eventContext = {
     onSearchInputChange: handleSearchInputChange,
-    // setSearchText
   }
 
   return (
