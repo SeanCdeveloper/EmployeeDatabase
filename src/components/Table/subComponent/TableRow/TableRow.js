@@ -9,7 +9,7 @@ employee: {
 
     return (
         <tr>
-        
+            
             <td>{image}</td>
             <td>{name}</td>
             <td>{phone}</td>
@@ -24,4 +24,3 @@ export default TableRow
 // Code For Bringing Images into Code
 
 // <td><img src={image}/></td>
-
