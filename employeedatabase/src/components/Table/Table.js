@@ -11,7 +11,6 @@ const Table = () => {
     const [sortOrder, setSortOrder] = useState();
 
     const {searchText} = React.useContext(AppContext);
-  //const {SearchInput} = React.useContext(AppContext);
 
     const handleTableHeaderClick = (event) => {
         const target = event.currentTarget;
@@ -45,17 +44,11 @@ const Table = () => {
 
    let toBeDisplayedEmployee = [...employees]
 
-//    console.log(toBeDisplayedEmployee);
-
-//    console.log(searchText);
-
     if (searchText !== '') {
         toBeDisplayedEmployee = toBeDisplayedEmployee.filter(({name}) => new RegExp(searchText, 'g').test(name));
     }
 
     const sortOrderModifier = sortOrder === 'ASC' ? 1: -1;
-
-//let sortedData = employees;
 
 switch (sortBy) {
     case "Image":
@@ -76,29 +69,6 @@ switch (sortBy) {
     default:
         break;
 }
-
-    // let sortedData = employees;
-
-    // switch (sortBy) {
-    //     case "Image":
-    //         sortedData = employees.sort((a, b) => a.image.localeCompare(b.image));
-    //         break;
-    //     case "Name":
-    //         sortedData = employees.sort((a, b) => a.name.localeCompare(b.name));
-    //         break;
-    //     case "Phone":
-    //         sortedData = employees.sort((a, b) => a.phone.localeCompare(b.phone));
-    //         break;
-    //     case "Email":
-    //         sortedData = employees.sort((a, b) => a.email.localeCompare(b.email));
-    //         break;
-    //     case "DOB":
-    //         sortedData = employees.sort((a, b) => a.dob.localeCompare(b.dob));
-    //         break;
-    //     default:
-    //         break;
-    // }
-
     
     return (
         <TableContext.Provider value={tableContext}>
@@ -121,18 +91,11 @@ switch (sortBy) {
                             <TableHeader
                                 text="DOB"
                             />
-                            {/* <th>Image</th>
-                  <th>Name</th>
-                  <th>Phone</th>
-                  <th>Email</th>
-                  <th>DOB</th> */}
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            /* Was employees.map */
                             toBeDisplayedEmployee.map((employee) => (
-                                //console.log(employee)
                                 <TableRow
                                     key={employee.id}
                                     employee={employee}
@@ -182,4 +145,26 @@ export default Table;
 //     )
 // }
 
-// export default Table;
+// export default Table; 
+
+    // let sortedData = employees;
+
+    // switch (sortBy) {
+    //     case "Image":
+    //         sortedData = employees.sort((a, b) => a.image.localeCompare(b.image));
+    //         break;
+    //     case "Name":
+    //         sortedData = employees.sort((a, b) => a.name.localeCompare(b.name));
+    //         break;
+    //     case "Phone":
+    //         sortedData = employees.sort((a, b) => a.phone.localeCompare(b.phone));
+    //         break;
+    //     case "Email":
+    //         sortedData = employees.sort((a, b) => a.email.localeCompare(b.email));
+    //         break;
+    //     case "DOB":
+    //         sortedData = employees.sort((a, b) => a.dob.localeCompare(b.dob));
+    //         break;
+    //     default:
+    //         break;
+    // }
