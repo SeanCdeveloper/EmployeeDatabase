@@ -20,8 +20,3 @@ const SearchInput = () => {
 }
 
 export default SearchInput;
-
-{/* <input
-value={appContext.searchText}
-onChange={eventContext.onSearchInputChange}
-/> */}

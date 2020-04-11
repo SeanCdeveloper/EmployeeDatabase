@@ -3,79 +3,79 @@
       "id": 1,
       "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
       "name": "SpongeBob",
-      "phone": "1",
-      "email": "a@a",
+      "phone": "215-111-1111",
+      "email": "spongeBob@google.com",
       "dob": "1988-01-01"
     },
     {
       "id": 2,
       "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
       "name": "Mr. Krabs",
-      "phone": "2",
-      "email": "b@b",
+      "phone": "215-222-2222",
+      "email": "Krabs@google.com",
       "dob": "1988-01-02"
     },
     {
       "id": 3,
       "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
       "name": "Squidward",
-      "phone": "3",
-      "email": "c@c",
+      "phone": "215-830-7373",
+      "email": "Squidward@google.com",
       "dob": "1988-01-03"
     },
     {
       "id": 4,
       "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
       "name": "Dexter",
-      "phone": "4",
-      "email": "d@d",
+      "phone": "215-888-8888",
+      "email": "Dexter@google.com",
       "dob": "1988-01-04"
     },
     {
       "id": 5,
       "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
       "name": "Courage",
-      "phone": "5",
-      "email": "e@e",
+      "phone": "215-983-8383",
+      "email": "courage@google.com",
       "dob": "1988-01-05"
     },
     {
       "id": 6,
       "image": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
       "name": "Doug Funnie",      
-      "phone": "6",
-      "email": "f@f",
+      "phone": "215-171-2772",
+      "email": "dougF@google.com",
       "dob": "1988-01-06"
     },
     {
       "id": 7,
       "image": "https://vignette2.wikia.nocookie.net/deathbattlefanon/images/2/2b/Bugs_Bunny.png/revision/latest?cb=20151206010607",
       "name": "Bugs Bunny",      
-      "phone": "7",
-      "email": "g@g",
+      "phone": "215-838-1020",
+      "email": "BugsB@google.com",
       "dob": "1988-01-07"},
     {
       "id": 8,
       "image": "http://vignette3.wikia.nocookie.net/p__/images/9/9a/Johnny_Bravo.png/revision/latest?cb=20131031233339&path-prefix=protagonist",
       "name": "Johnny Bravo",
-      "phone": "8",
-      "email": "g@g",
+      "phone": "215-717-7737",
+      "email": "JohnnyB@google.com",
       "dob": "1988-01-08"
     },
     {
       "id": 9,
       "image": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
       "name": "Tommy Pickles",      
-      "phone": "9",
-      "email": "h@h",
+      "phone": "215-368-3736",
+      "email": "TommyP@google.com",
       "dob": "1988-01-09"
     },
     {
       "id": 10,
       "image": "http://vignette3.wikia.nocookie.net/rockosmodernlife/images/9/9e/Rockos-modern-life-4e582a8f06a41.png/revision/latest?cb=20130522173416",
       "name": "Rocko",
-      "phone": "10",
-      "email": "i@i",
+      "phone": "215-888-8888",
+      "email": "Rocko@google.com",
       "dob": "1988-01-10"
     }
   ]
