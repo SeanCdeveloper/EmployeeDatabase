@@ -1,5 +1,6 @@
 import React from 'react';
 import {EventContext, TableContext} from '../../tableContexts.js';
+import './style.css'
 
 const TableHeader = (props) => {
 const tableContext = React.useContext(TableContext);
@@ -15,8 +16,7 @@ const eventContext = React.useContext(EventContext);
     } = tableContext
 
     return (
-            <th
-            //scope='col'
+            <th className="header"
             data-id={text}
             onClick={eventContext.onTableHeaderClick}
             >
