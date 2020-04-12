@@ -19,5 +19,5 @@ Given a table of random users, when the user loads the page, a table of employee
 
   * Filter the users by name.
 
-<img src="../public/images/appPic.png">
+<img src="public/images/appPic.png">
 
