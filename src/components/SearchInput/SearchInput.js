@@ -5,8 +5,7 @@ import './style.css'
 const SearchInput = () => {
     const appContext = React.useContext(AppContext);
     const eventContext = React.useContext(EventContext);
-
-    console.log(AppContext);
+  
     return (
     <div className='container'>
      <input

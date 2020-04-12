@@ -58,8 +58,8 @@ const Table = () => {
     return (
         <TableContext.Provider value={tableContext}>
             <EventContext.Provider value={eventContext}>
-                <div class="card-body">
-                    <table class='table table-striped'>
+                <div className="card-body">
+                    <table className='table table-striped'>
                         <thead>
                             <tr>
                                 <TableHeader
