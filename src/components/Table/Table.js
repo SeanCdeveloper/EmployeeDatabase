@@ -33,7 +33,7 @@ const Table = () => {
         toBeDisplayedEmployee = toBeDisplayedEmployee.filter(({ name }) => new RegExp(searchText, 'g').test(name));
     }
 
-    const sortOrderModifier = sortOrder === 'ASC' ? 1 : -1;
+    //const sortOrderModifier = sortOrder === 'ASC' ? 1 : -1;
 
     switch (sortBy) {
         case "Image":
